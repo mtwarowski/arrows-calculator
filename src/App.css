@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-header-scored-values-box{
+  float: left;
+  width: 80%;  
+  overflow: hidden;
+}
+
+.App-header-action-buttons{
+  float: right;
+  width: 20%;  
+  overflow: hidden;  
+}
+
+App-header-scored-values{
+  height: 20px;
+}
+
+.App-header-scored-values_sum{
+  font-size: 10vh;
+}
+
+.App-header-scored-values{
+  overflow: hidden;
+}
+
+.App-action-button {
+  font-size: 3vh;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  padding-top: 1vh;
+  height: 50px;
+  width: 100%;
+  margin: 5px;
+}
+
+.App-buttons {
+  background: lightblue; 
+  display: grid;
+  grid-gap: 5px;
+  padding: 5px;
+  height: 100%;
+  grid-template-columns: auto auto auto;
+}
+
+.App-score-button {
+  font-size: 9vh;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1vh;
+}
+
+.App-div-button {
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+.App-div-button:active {
+  color:grey;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
