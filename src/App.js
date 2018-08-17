@@ -75,13 +75,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          
           <div className="App-header-scored-values-box">
             <div className="App-header-scored-values">
-              {this.state.scoredValues.map((x, index) => {
-                return <span key={index}><span>{x.displayValue} </span>
-                  {!this.isLastIndex(index) && <span>+ </span>}
-                </span>
-              })}
+                {this.state.scoredValues.map((x, index) => {
+                  return <span key={index}><span>{x.displayValue} </span>
+                    {!this.isLastIndex(index) && <span>+ </span>}
+                  </span>
+                })}
             </div>
             <div className="App-header-scored-values_sum">
               {this.state.scoredValues && this.state.scoredValues.length > 0 && <span> = </span>}
@@ -94,6 +95,7 @@ class App extends Component {
             <ActionButton handleOnClicked={this.handleClearButtonClicked} displayValue={'Clear'} color={'#D3D3D3'} />
           </div>
         </header>
+
         <div className="App-buttons">
           {buttonsConfig.map((b, index) => <ScoreButton key={index} {...b} handleScoreClicked={this.handleScoreClicked} />)}
         </div>
